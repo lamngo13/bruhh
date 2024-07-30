@@ -21,9 +21,10 @@ body {
     margin: 0;
     font-size: 1.2em;
   }
+  
 
   .gallerybutton{
-    background-color: #004080;
+    background-color: #000407;
     color: white;
     padding: 10px;
     text-align: center;
