@@ -2,14 +2,14 @@ body {
     font-family: Comic, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #6e7183;
+    background-color: #02051a;
   }
 
   .topcontainer {
     display: flex;
     justify-content: space-between;
     align-items: stretch; /* Ensure the header stretches to match the height of the image */
-    height: 70vh; /* Make the container take up the full height of the viewport */
+    height: 65vh; /* Make the container take up the full height of the viewport */
     margin: auto; /* Center the container horizontally */
 
   }
@@ -40,25 +40,27 @@ body {
     text-align: left; /* Ensures the text is aligned to the left */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Align items to the top */
     align-items: flex-start; /* Align items to the start (left) */
     height: 100%; /* Make the header fill the available height */
   }
   
   .header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 6.5em;
+    color: white;
   }
   
   .header p {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: white;
   }
   
 
   .gallerybutton{
-    background-color: #000407;
-    color: white;
+    background-color: #494b57;
+    color: #85C1E9;
     padding: 10px;
     text-align: center;
     margin: 10px;
