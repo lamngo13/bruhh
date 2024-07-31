@@ -2,7 +2,14 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden;
   }
+  
+  #app-root {
+    height: 100%;
+    overflow: hidden;
+  }
+  
   
   .gallery-container {
     background-color: #494b57;
@@ -39,6 +46,7 @@ html, body {
   
   .gallery-content {
     position: relative;
+    overflow: hidden;
   }
   
   .image-container {
