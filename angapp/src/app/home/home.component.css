@@ -8,25 +8,39 @@ body {
   .topcontainer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch; /* Ensure the header stretches to match the height of the image */
+    /*max-width: 800px; /* Set a maximum width for the container */
+    /*max-height: 400px; /* Set a maximum height for the container */
+    margin: auto; /* Center the container horizontally */
+
   }
 
   .imagetop {
-    flex: 0 0 70%; /* Takes up 70% of the horizontal space */
+    flex: 100%; /* Takes up 70% of the horizontal space */
     text-align: right; /* Ensures the image is aligned to the right */
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    overflow: hidden; /* Hide any overflow */
+    object-fit: cover; /* Cover the container with the image */
   }
   
   .imagetop img {
-    width: 100%; /* Ensures the image fills the container */
-    height: auto; /* Maintains the aspect ratio of the image */
+    max-width: 100%; /* Ensure the image fills the container */
+    max-height: 100%; /* Ensure the image does not exceed the container height */
+    
   }
   
   .header {
     background-color: #494b57;
     color: white;
     padding: 20px;
-    flex: 0 0 30%; /* Takes up 30% of the horizontal space */
+    flex: 150%; /* Takes up 30% of the horizontal space */
     text-align: left; /* Ensures the text is aligned to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    height: 100%; /* Make the header fill the available height */
   }
   
   .header h1 {
