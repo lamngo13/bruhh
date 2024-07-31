@@ -1,15 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Comic, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #6e7183;
+  }
+
+  .topcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imagetop {
+    flex: 0 0 70%; /* Takes up 70% of the horizontal space */
+    text-align: right; /* Ensures the image is aligned to the right */
+  }
+  
+  .imagetop img {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains the aspect ratio of the image */
   }
   
   .header {
-    background-color: #004080;
+    background-color: #494b57;
     color: white;
     padding: 20px;
-    text-align: center;
+    flex: 0 0 30%; /* Takes up 30% of the horizontal space */
+    text-align: left; /* Ensures the text is aligned to the left */
   }
   
   .header h1 {
