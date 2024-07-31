@@ -15,7 +15,7 @@ body {
   }
 
   .imagetop {
-    flex: 50%; /* Takes up 70% of the horizontal space */
+    flex: 35%; /* Takes up 70% of the horizontal space */
     text-align: right; /* Ensures the image is aligned to the right */
     display: flex;
     align-items: center; /* Center image vertically */
@@ -36,11 +36,12 @@ body {
   .header {
     background-color: #494b57;
     color: white;
-    flex: 50%; /* Takes up 30% of the horizontal space */
+    flex: 65%; /* Takes up 30% of the horizontal space */
     text-align: left; /* Ensures the text is aligned to the left */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the start (left) */
     height: 100%; /* Make the header fill the available height */
   }
   
