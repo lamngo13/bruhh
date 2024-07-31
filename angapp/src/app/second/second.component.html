@@ -1,3 +1,14 @@
-<p>second works!</p>
-yeet yuh
-<button (click)="goHome()">Home</button>
+<div class="gallery-container">
+    <div class="gallery-header">
+      <h1>Image Gallery</h1>
+      <button class="home-button" (click)="goHome()">Home</button>
+    </div>
+    <div class="gallery-content">
+      <button class="arrow left-arrow" (click)="prevImage()">&#10094;</button>
+      <div class="image-container">
+        <img [src]="images[currentImage]" alt="Gallery Image">
+      </div>
+      <button class="arrow right-arrow" (click)="nextImage()">&#10095;</button>
+    </div>
+  </div>
+  
