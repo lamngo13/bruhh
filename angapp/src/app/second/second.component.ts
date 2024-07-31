@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
+import { ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-second',
   templateUrl: './second.component.html',
-  styleUrl: './second.component.css'
+  styleUrl: './second.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class SecondComponent {
 
@@ -19,7 +21,21 @@ export class SecondComponent {
   ]
   currentImage = 0;
   
-    constructor(private router: Router) {}
+    constructor(private router: Router,
+      private elementRef: ElementRef
+    ) {}
+
+    ngAfterViewInit() {
+      this.elementRef.nativeElement.ownerDocument
+          .body.style.backgroundColor = '#494b57';
+  }
+
+  ngOnDestroy() {
+    // Reset the background color when this component is destroyed
+    this.elementRef.nativeElement.ownerDocument
+        .body.style.backgroundColor = ''; // Reset to default or specify a default color
+  }
+
   
     goHome() {
       console.log('home');

@@ -1,15 +1,13 @@
-html, body {
+
+
+  
+html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
+    background-color: #494b57;
   }
-  
-  #app-root {
-    height: 100%;
-    overflow: hidden;
-  }
-  
   
   .gallery-container {
     background-color: #494b57;
