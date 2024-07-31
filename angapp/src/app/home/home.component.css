@@ -88,9 +88,34 @@ body {
 .textwimagecontainer {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Ensure the header stretches to match the height of the image */
-    flex: 20%; /* Make the container take up the full height of the viewport */
-    margin: auto; /* Center the container horizontally */
+    align-items: stretch;
+    width: 100%;
+    flex: 1;
+    max-height: 30%;
+  }
+
+  .text-section {
+    flex: 1; /* Takes up 50% of the horizontal space */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: right; /* Center text horizontally */
+    padding: 10px;
+    color: white;
+  }
+  
+  .image-section {
+    flex: 1; /* Takes up 50% of the horizontal space */
+    display: flex;
+    align-items: left; /* Center image vertically */
+    justify-content: left; /* Center image horizontally */
+    overflow: hidden; /* Hide any overflow */
+  }
+
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Cover the container with the image */
+    cursor: pointer;
   }
   
   .content {

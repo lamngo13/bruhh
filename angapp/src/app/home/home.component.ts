@@ -15,4 +15,8 @@ export class HomeComponent {
     this.router.navigate(['/second']);
   }
 
+  toggleLangugae() {  
+    console.log('toggleLangugae');
+  }
+
 }
