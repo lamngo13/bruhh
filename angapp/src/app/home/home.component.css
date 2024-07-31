@@ -56,6 +56,14 @@ body {
     font-size: 1.5em;
     color: white;
   }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  } 
   
 
   .gallerybutton{
@@ -65,7 +73,14 @@ body {
     text-align: center;
     margin: 10px;
     border-radius: 5px;
+    cursor: pointer; 
   }
+
+  .gallerybutton:hover {
+    background-color: #494b57;
+    color: #85C1E9; 
+    cursor: pointer; /* Ensures the cursor remains a pointer on hover */
+}
   
   .content {
     padding: 0px;
