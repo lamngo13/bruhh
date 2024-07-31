@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
+  language: string = 'en';
+
   constructor(private router: Router) {}
 
   second() {
@@ -17,6 +19,11 @@ export class HomeComponent {
 
   toggleLangugae() {  
     console.log('toggleLangugae');
+    if (this.language === 'en') {
+      this.language = 'sp';
+    } else {
+      this.language = 'en';
+    }
   }
 
 }

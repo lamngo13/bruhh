@@ -9,7 +9,8 @@
       </div>
       <div class="textwimagecontainer">
         <div class="text-section">
-          <p>hacer clic en el pero para español</p>
+          <p *ngIf="language === 'en'">Hacer clic en el pero para Español</p>
+          <p *ngIf="language === 'sp'">Click on the dog for English</p>
         </div>
         <div class="image-section">
           <img class="img" src="assets/img/doggie.png" (click)="toggleLangugae()" alt="image">
