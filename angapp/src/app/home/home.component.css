@@ -3,13 +3,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #02051a;
+    color:#85C1E9;
+    /* todo fix the colors
+    */
   }
 
   .topcontainer {
     display: flex;
     justify-content: space-between;
     align-items: stretch; /* Ensure the header stretches to match the height of the image */
-    height: 65vh; /* Make the container take up the full height of the viewport */
+    height: 70vh; /* Make the container take up the full height of the viewport */
     margin: auto; /* Center the container horizontally */
 
   }
@@ -62,25 +65,33 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding: 10px;
   } 
   
 
   .gallerybutton{
     background-color: #494b57;
     color: #85C1E9;
-    padding: 10px;
     text-align: center;
-    margin: 10px;
+    padding: 10px 90px;
     border-radius: 5px;
     cursor: pointer; 
+    border: none;
+    font-size: 1.2em;
   }
 
   .gallerybutton:hover {
-    background-color: #494b57;
+    background-color: #000000;
     color: #85C1E9; 
     cursor: pointer; /* Ensures the cursor remains a pointer on hover */
 }
+
+.textwimagecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure the header stretches to match the height of the image */
+    flex: 20%; /* Make the container take up the full height of the viewport */
+    margin: auto; /* Center the container horizontally */
+  }
   
   .content {
     padding: 0px;

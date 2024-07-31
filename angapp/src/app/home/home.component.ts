@@ -14,4 +14,5 @@ export class HomeComponent {
     console.log('second');
     this.router.navigate(['/second']);
   }
+
 }
