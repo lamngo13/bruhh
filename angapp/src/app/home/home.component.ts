@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,9 @@ export class HomeComponent {
 
   language: string = 'en';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+              private elementRef: ElementRef
+  ) {}
 
   second() {
     console.log('second');
@@ -25,5 +28,10 @@ export class HomeComponent {
       this.language = 'en';
     }
   }
+
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument
+        .body.style.backgroundColor = '#494b57';
+}
 
 }
