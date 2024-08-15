@@ -7,6 +7,9 @@ body {
     /* todo fix the colors
     */
   }
+  .generalText {
+    color: white;
+  }
 
   .topcontainer {
     display: flex;
@@ -155,3 +158,7 @@ body {
     width: 100%;
   }
   
+  .contact-us {
+    color: white;
+    text-align: left;
+  }
