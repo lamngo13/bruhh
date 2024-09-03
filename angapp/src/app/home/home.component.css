@@ -9,7 +9,7 @@
 .background-image {
     position: relative;
     height: 70vh; /* majority of viewport height */
-    background-image: url('/assets/img/howse.jpg'); /* Replace with your image URL */
+    background-image: url('../../assets/img/howse.jpg'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
 }

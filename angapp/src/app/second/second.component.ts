@@ -23,6 +23,7 @@ export class SecondComponent {
     'assets/img/IMG_1661.jpg',
     'assets/img/IMG_2044.jpg',
     'assets/img/IMG_2047.jpg',
+    'assets/img/howse.jpg',
   ]
   currentImage = 0;
   
