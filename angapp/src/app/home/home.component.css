@@ -21,14 +21,14 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
     padding-bottom: 3em;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 6em;
     margin: 0;
 }
 
@@ -54,13 +54,11 @@ p {
 }
 
 .services {
-  margin-top: 20px;
-  padding: 60px 30px; /* Increased padding for more spacing */
 }
 
 .services h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 3.5em;
+  margin-bottom: 50px;
   color: #85C1E9; /* A different color for the heading */
   border-bottom: 3px solid #85C1E9; /* Add a top border for a formal touch */
 }
@@ -73,10 +71,8 @@ p {
 }
 
 .service-item {
-  background-color: #2C3E50; /* Background color for the block */
-  border: 2px solid #85C1E9; /* Border around the block */
+  background-color: #1a3046; /* Background color for the block 2C3E50 */
   padding: 15px; /* Space inside the block */
-  margin: 10px 0; /* Space between each block */
-  border-radius: 10px; /* Rounded corners for a softer look */
-  font-size: 1.5em; /* Adjusted font size */
+  margin: 1px 0; /* Space between each block */
+  font-size: 1em; /* Adjusted font size */
 }
