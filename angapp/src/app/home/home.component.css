@@ -79,6 +79,7 @@ p {
   padding: 15px; /* Space inside the block */
   margin: 1px 0; /* Space between each block */
   font-size: 1em; /* Adjusted font size */
+  text-align: center;
 }
 
 .services p {
@@ -114,7 +115,7 @@ p {
   background-color: #2C3E50; /* Match your website's color scheme */
   color: #ecf0f1;
   text-align: center;
+  font-size: 1.5em;
   padding: 10px 0;
-  border-top: 2px solid #85C1E9; /* Add a top border for styling */
   z-index: 1000; /* Ensure it stays on top */
 }

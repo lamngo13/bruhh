@@ -18,6 +18,11 @@ export class SecondComponent {
     'assets/img/image5.jpeg',
     'assets/img/image6.jpeg',
     'assets/img/image7.jpeg',
+    'assets/img/IMG_1586.jpg',
+    'assets/img/IMG_1658.jpg',
+    'assets/img/IMG_1661.jpg',
+    'assets/img/IMG_2044.jpg',
+    'assets/img/IMG_2047.jpg',
   ]
   currentImage = 0;
   
