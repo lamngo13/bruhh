@@ -162,3 +162,44 @@ body {
     color: white;
     text-align: left;
   }
+
+
+  @media (max-width: 768px) {
+    .topcontainer {
+      flex-direction: column;
+      height: auto; /* Adjust height for mobile */
+    }
+  
+    .imagetop, .header {
+      flex: 100%; /* Make both sections take full width on mobile */
+      text-align: center; /* Center-align text and images on mobile */
+    }
+  
+    .header h1 {
+      font-size: 4em; /* Decrease font size for mobile */
+    }
+  
+    .header p {
+      font-size: 1em; /* Decrease font size for mobile */
+    }
+  
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+      width: 100%;
+    }
+  
+    .gallerybutton {
+      padding: 10px 20px; /* Adjust button padding */
+      width: 100%; /* Make buttons full width on mobile */
+      margin-bottom: 10px; /* Add margin between buttons */
+    }
+  
+    .textwimagecontainer {
+      flex-direction: column; /* Stack text and image vertically */
+      max-height: none; /* Remove max-height to allow natural sizing */
+    }
+  
+    .image-section {
+      justify-content: center; /* Center image on mobile */
+    }
+  }
