@@ -24,6 +24,7 @@
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     padding: 20px;
     border-radius: 10px;
+    padding-bottom: 3em;
 }
 
 h1 {
@@ -53,13 +54,15 @@ p {
 }
 
 .services {
-  padding: 40px 20px; /* Add padding for spacing */
+  margin-top: 20px;
+  padding: 60px 30px; /* Increased padding for more spacing */
 }
 
 .services h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
   color: white; /* A different color for the heading */
+  border-bottom: 5px solid #85C1E9; /* Add a top border for a formal touch */
 }
 
 .services li {
