@@ -61,13 +61,22 @@ p {
 .services h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: white; /* A different color for the heading */
-  border-bottom: 5px solid #85C1E9; /* Add a top border for a formal touch */
+  color: #85C1E9; /* A different color for the heading */
+  border-bottom: 3px solid #85C1E9; /* Add a top border for a formal touch */
 }
 
 .services li {
-  color: #85C1E9;
+  color: white;
   list-style-type: none;
   font-size: 2em;
   padding-top: .2em;
+}
+
+.service-item {
+  background-color: #2C3E50; /* Background color for the block */
+  border: 2px solid #85C1E9; /* Border around the block */
+  padding: 15px; /* Space inside the block */
+  margin: 10px 0; /* Space between each block */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  font-size: 1.5em; /* Adjusted font size */
 }
