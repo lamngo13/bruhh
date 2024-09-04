@@ -119,3 +119,69 @@ p {
   padding: 10px 0;
   z-index: 1000; /* Ensure it stays on top */
 }
+
+
+
+/* media query for MOBILE!!!!!!!!!!!!! */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .background-image {
+      height: 50vh; /* Reduced height for mobile */
+  }
+
+  .overlay {
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      padding: 10px;
+      border-radius: 5px;
+      padding-bottom: 2em;
+  }
+
+  h1 {
+      font-size: 3em; /* Smaller font size for mobile */
+  }
+
+  p {
+      font-size: 1.2em; /* Adjusted font size for mobile */
+  }
+
+  .button-group button {
+      padding: 8px 16px;
+      font-size: 1.2em;
+      margin: 5px;
+  }
+
+  .services {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      grid-template-rows: auto; /* Auto-adjust row height */
+  }
+
+  .services h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+  }
+
+  .services li {
+      font-size: 1.2em; /* Smaller font size for mobile */
+      padding-top: .5em;
+  }
+
+  .service-item {
+      padding: 10px;
+      font-size: 0.9em; /* Adjusted font size for mobile */
+  }
+
+  .about-us h2 {
+      font-size: 2.5em; /* Smaller font size for mobile */
+  }
+
+  .about-us p {
+      font-size: 1.2em; /* Adjusted font size for mobile */
+  }
+
+  .sticky-footer {
+      font-size: 1.2em; /* Smaller font size for mobile */
+      padding: 8px 0;
+  }
+}
