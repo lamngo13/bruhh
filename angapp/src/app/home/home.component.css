@@ -3,15 +3,25 @@
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    box-sizing: content-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
 .background-image {
-    position: relative;
-    height: 70vh; /* majority of viewport height */
-    background-image: url('../../assets/img/howse.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  height: 70vh; /* Keeps height at 70% of the viewport height */
+  width: 100%; /* Full width */
+  background-image: url('../../assets/img/howse.jpg'); /* Your image */
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Keeps the image centered */
+  margin: 0;
+  padding: 0;
+  min-width: 100%; /* Prevents the image from being narrower than the container */
+  /* new */
+  text-align: center;
+
 }
 
 .overlay {
@@ -54,6 +64,7 @@ p {
 }
 
 .services {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal columns */
   gap: 20px; /* Space between the items */

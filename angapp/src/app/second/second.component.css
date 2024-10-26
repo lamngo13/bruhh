@@ -16,14 +16,24 @@ html {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Keep this to reduce space above */
     align-items: center;
-  }
-  
-  .gallery-header {
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 0; /* Ensure there's no padding at the bottom */
+}
+
+.gallery-content {
+  position: relative;
+  flex-grow: 1; /* This allows the gallery content to grow and take available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-header {
+    margin-bottom: 10px; /* Reduce margin-bottom */
     position: relative;
-  }
+}
   
   .home-button {
     background-color: #494b57;
@@ -46,12 +56,12 @@ html {
     position: relative;
     overflow: hidden;
   }
-  
+
   .image-container {
     width: 80vw;
-    height: 60vh;
+    height: calc(70vh - 60px); /* Increase height of the image container to use more space */
     overflow: hidden;
-  }
+}
   
   .image-container img {
     width: 100%;
