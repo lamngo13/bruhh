@@ -31,10 +31,10 @@ export class SecondComponent {
       private elementRef: ElementRef
     ) {}
 
-    ngAfterViewInit() {
-      this.elementRef.nativeElement.ownerDocument
-          .body.style.backgroundColor = '#494b57';
-  }
+  //   ngAfterViewInit() {
+  //     this.elementRef.nativeElement.ownerDocument
+  //         .body.style.backgroundColor = '#494b57';
+  // }
 
   ngOnDestroy() {
     // Reset the background color when this component is destroyed

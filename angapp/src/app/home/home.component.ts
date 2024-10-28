@@ -29,9 +29,9 @@ export class HomeComponent {
     }
   }
 
-  ngAfterViewInit() {
-    this.elementRef.nativeElement.ownerDocument
-        .body.style.backgroundColor = '#494b57';
-}
+//   ngAfterViewInit() {
+//     this.elementRef.nativeElement.ownerDocument
+//         .body.style.backgroundColor = '#494b57';
+// }
 
 }

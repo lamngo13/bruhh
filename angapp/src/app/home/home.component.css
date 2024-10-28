@@ -9,19 +9,20 @@
     box-sizing: content-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
-.background-image {
-  position: relative;
-  height: 70vh; /* Keeps height at 70% of the viewport height */
-  width: 100%; /* Full width */
-  background-image: url('../../assets/img/howse.jpg'); /* Your image */
-  background-size: cover; /* Ensures the image covers the entire div */
-  background-position: center; /* Keeps the image centered */
-  margin: 0;
-  padding: 0;
-  min-width: 100%; /* Prevents the image from being narrower than the container */
-  /* new */
-  text-align: center;
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
 
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.services, .about-us, .sticky-footer {
+  margin: 20px;
 }
 
 .overlay {
@@ -132,7 +133,7 @@ p {
 }
 
 
-
+/* THIS IS A BIG TODO BUT MAKE IT WORK ON MOBILE */
 /* media query for MOBILE!!!!!!!!!!!!! */
 /* Mobile Styles */
 @media (max-width: 768px) {
