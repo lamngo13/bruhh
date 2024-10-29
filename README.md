@@ -14,11 +14,17 @@ Deploying: https://github.com/angular-schule/angular-cli-ghpages#cname https://d
 
 # dev notes
 upcoming events
+
 calendar
+
 links
+
 gallery
+
 make it look pretty 
+
 find a color scheme
+
 deploy
 
 make it work on mobile
