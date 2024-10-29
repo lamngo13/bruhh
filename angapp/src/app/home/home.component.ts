@@ -25,6 +25,11 @@ export class HomeComponent {
     this.router.navigate(['/shop']);
   }
 
+  game() {
+    console.log('game');
+    this.router.navigate(['/game']);
+  }
+
   toggleLangugae() {  
     console.log('toggleLangugae');
     if (this.language === 'en') {
