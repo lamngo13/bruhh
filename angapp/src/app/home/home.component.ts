@@ -20,6 +20,11 @@ export class HomeComponent {
     this.router.navigate(['/second']);
   }
 
+  shop() {
+    console.log('shop');
+    this.router.navigate(['/shop']);
+  }
+
   toggleLangugae() {  
     console.log('toggleLangugae');
     if (this.language === 'en') {
