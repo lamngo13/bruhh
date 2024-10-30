@@ -30,6 +30,36 @@
   z-index: 1000; /* Ensure it stays on top */
 }
 
+.sticky-header {
+  position: fixed;
+  bottom: 100;
+  left: 0;
+  width: 100%;
+  background-color: #0d2a47; /* Match your website's color scheme */
+  color: #ecf0f1;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px 0;
+  z-index: 1001; /* Ensure it stays on top */
+}
+
+.menu-button {
+  background-color: #0d2a47;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 0px;
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: #0056b3;
+}
+
 
 .video-container {
   max-width: 60vw;  /* Limits width to 60% of the viewport width */
