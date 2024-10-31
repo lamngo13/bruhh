@@ -10,10 +10,18 @@ import { ElementRef } from '@angular/core';
 export class HomeComponent {
 
   language: string = 'en';
+  gifPosition = {x: 0, y: 0};
 
   constructor(private router: Router,
               private elementRef: ElementRef
   ) {}
+
+  onMouseMove(event: MouseEvent) {
+    console.log("yeet")
+    this.gifPosition.x = event.clientX + 10; // Offset to avoid cursor overlap
+    this.gifPosition.y = event.clientY + 10;
+    console.log("mousemove", this.gifPosition);
+  }
 
   second() {
     console.log('second');

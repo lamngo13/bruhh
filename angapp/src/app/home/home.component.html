@@ -5,9 +5,12 @@
   picture" allowfullscreen></iframe>
 </div> -->
 
-<header class="sticky-header">
-  <button class="menu-button" (click)="shop()">Menu</button>
-</header>
+
+<!-- <div>
+  <header class="sticky-header">
+    <button class="menu-button" (click)="shop()">Menu</button>
+  </header>
+</div> -->
 
 <div class="title-logo">
   <h1>BEDRUMOR BUT IMAGINE ITS A COOL FONT OR LOGO OR SMTH</h1>
@@ -43,6 +46,18 @@
 <button class="shop-button" (click)="shop()">MERCH</button>
 <button class="shop-button" (click)="second()">GALLERY</button>
 <button class="shop-button" (click)="game()">GAME</button>
+
+
+
+<!-- cool animal stuff todo  -->
+<div (mousemove)="onMouseMove($event)">
+  <img
+    src="../../assets/img/oneko.gif"
+    [ngStyle]="{ top: gifPosition.y + 'px', left: gifPosition.x + 'px' }"
+    class="cursor-follow-gif"
+  />
+</div>
+
 
 
 
