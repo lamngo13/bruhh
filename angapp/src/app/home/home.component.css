@@ -60,6 +60,30 @@
   background-color: #0056b3;
 }
 
+.socials-container-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.socials-container-title {
+  font-size: 1em;
+  color: #85C1E9;
+  justify-content: center;
+}
+
+.socials-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px;
+  gap: 10%;
+  font-size: 2em;
+}
+
 
 .video-container {
   max-width: 60vw;  /* Limits width to 60% of the viewport width */
