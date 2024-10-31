@@ -12,7 +12,7 @@ export class HomeComponent {
 
   language: string = 'en';
   gifPosition = {x: 0, y: 0};
-  min_image_distance = 10;
+  min_image_distance = 5;
   smoothing_value = 0.04;
   cursorPosition = { x: 0, y: 0 };
   intervalId: any;
