@@ -1,0 +1,9 @@
+https://calendar.google.com/calendar/u/0?cid=MTdmMWM0MjU3ODg2N2MwNjBiOWZiMzllOTQ2MjYwOWNiMmRmZmM1NmJkZDM0ZDg2MGZiNTIxYWUxZTE1MmZmMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+
+
+bruh
+
+<iframe src="https://calendar.google.com/calendar/embed?src=17f1c42578867c060b9fb39e9462609cb2dffc56bdd34d860fb521ae1e152ff2%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+fix spacig of calendaer
+fix whitespace at top of sticky header

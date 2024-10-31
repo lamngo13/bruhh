@@ -4,7 +4,7 @@
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif !important;
     overflow-x: hidden; /* Prevents horizontal scrolling */
     box-sizing: content-box; /* Ensures padding and border are included in the element's total width and height */
 }
@@ -14,8 +14,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 80%;
-    padding: 20px;
-    padding-top: 12%;
+    padding-top: 5%;
 }
 
 .sticky-footer {
@@ -74,7 +73,10 @@
   background-color: transparent; /* Make the button's background transparent */
   border: none; /* Remove button border */
   padding: 0; /* Remove padding from the button */
-  margin: 10px;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   cursor: pointer;
   font-size: 1.5em;
   font-family: 'Times New Roman', Times, serif;
@@ -127,8 +129,8 @@
   align-items: center;
   flex-direction: column;
   margin: 20px;
-  margin-top: 12%;
-  margin-bottom: 12%;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .socials-container-title {
@@ -146,6 +148,26 @@
   gap: 10%;
   font-size: 2em;
   color: #85C1E9;
+}
+
+.upcoming-events-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.upcoming-events-title {
+  font-size: 1em;
+  color: #85C1E9;
+  justify-content: center;
+}
+
+.calendar{
+  align-items: center;
 }
 
 
