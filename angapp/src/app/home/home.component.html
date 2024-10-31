@@ -5,12 +5,23 @@
   picture" allowfullscreen></iframe>
 </div> -->
 
+<!-- src="../../assets/img/oneko.gif" -->
 
-<!-- <div>
+<div (mousemove)="onMouseMove($event)">
+  <img
+    src="../../assets/img/heart.jpg"
+    [ngStyle]="{ top: gifPosition.y + 'px', left: gifPosition.x + 'px' }"
+    class="cursor-follow-gif"
+  />
+  
+<div>
   <header class="sticky-header">
     <button class="menu-button" (click)="shop()">Menu</button>
   </header>
-</div> -->
+</div>
+
+<!-- cool animal stuff todo  -->
+
 
 <div class="title-logo">
   <h1>BEDRUMOR BUT IMAGINE ITS A COOL FONT OR LOGO OR SMTH</h1>
@@ -49,14 +60,8 @@
 
 
 
-<!-- cool animal stuff todo  -->
-<div (mousemove)="onMouseMove($event)">
-  <img
-    src="../../assets/img/oneko.gif"
-    [ngStyle]="{ top: gifPosition.y + 'px', left: gifPosition.x + 'px' }"
-    class="cursor-follow-gif"
-  />
-</div>
+
+
 
 
 
@@ -65,3 +70,5 @@
 <footer class="sticky-footer">
   <p>Call Us At (919) 454-7507</p>
 </footer>
+
+</div>

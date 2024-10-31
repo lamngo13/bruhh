@@ -11,6 +11,7 @@ export class HomeComponent {
 
   language: string = 'en';
   gifPosition = {x: 0, y: 0};
+  min_image_distance = 20;
 
   constructor(private router: Router,
               private elementRef: ElementRef
