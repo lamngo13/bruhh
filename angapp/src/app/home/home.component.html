@@ -9,7 +9,7 @@
 
 <div (mousemove)="onMouseMove($event)">
   <img
-    src="../../assets/img/heart.png"
+    [src]="imageSrc"
     [ngStyle]="{ top: gifPosition.y + 'px', left: gifPosition.x + 'px' }"
     class="cursor-follow-gif"
   />

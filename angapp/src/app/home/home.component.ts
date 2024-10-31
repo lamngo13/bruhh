@@ -16,6 +16,8 @@ export class HomeComponent {
   smoothing_value = 0.04;
   cursorPosition = { x: 0, y: 0 };
   intervalId: any;
+  imageSrc = "../../assets/img/sadheart.png";
+  happy_heart_distance = 100;
 
   constructor(private router: Router,
               private elementRef: ElementRef
@@ -65,8 +67,14 @@ export class HomeComponent {
       this.gifPosition.x += distanceX * this.smoothing_value;
       this.gifPosition.y += distanceY * this.smoothing_value;
     }
+
+    //display sad or happy heart based on happy_heart_distance
+    if (distance < this.happy_heart_distance) {
+      this.imageSrc = "../../assets/img/heart.png";
+    } else {
+      this.imageSrc = "../../assets/img/sadheart.png";
   }
-  
+}
 
   second() {
     console.log('second');
