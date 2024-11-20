@@ -36,27 +36,45 @@ body, html {
   color: #85C1E9; /* Subtle hover effect */
 }
 
-/* Title and Logo */
+.title-video-container {
+  display: flex; /* Set horizontal alignment */
+  justify-content: space-around; /* Ensure even spacing */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+  margin: 20px auto;
+  width: 90%; /* Responsive width */
+  max-width: 1200px; /* Optional max width */
+  height: 85vh; /* Increase height to occupy more vertical space */
+  gap: 10px; /* Reduce horizontal gap between elements */
+}
+
 .title-logo {
-  margin: 80px auto 20px; /* Spacing below fixed header */
-  text-align: center;
+  flex: 1; /* Adjust space allocation */
+  text-align: center; /* Center align logo */
+  height: 80%; /* Increase vertical space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-image {
-  max-width: 80%;
-  height: auto;
+  max-width: 90%; /* Scale logo */
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* Video Container */
 .video-container {
-  margin: 20px auto;
-  width: 90%; /* Adjust width for smaller screens */
-  max-width: 800px; /* Set a max width */
+  flex: 2; /* Adjust space allocation */
+  max-width: 600px; /* Ensure video doesn't grow too large */
+  margin: 10px; /* Add some spacing */
+  height: 80%; /* Increase vertical space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .video-container iframe {
   width: 100%;
-  height: calc(100% * 0.5625); /* Maintain 16:9 aspect ratio */
+  height: 100%;
 }
 
 /* Socials */
@@ -108,6 +126,17 @@ body, html {
 
   .video-container iframe {
     height: calc(90% * 0.5625); /* Smaller height for mobile */
+  }
+
+  .title-video-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .title-logo, .video-container {
+    flex: unset;
+    width: 100%; /* Take full width */
+    max-width: none; /* Remove max width */
+    margin: 10px 0; /* Add spacing between items */
   }
 
   .socials-links a {
