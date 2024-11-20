@@ -113,6 +113,15 @@
   background-size: 400% 100%;
 }
 
+.logo-image {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 30%;
+  max-width: 80%;
+  max-height: 80%;
+  padding-top: 5%;
+}
 @keyframes rainbow_animation {
   0%,100% {
       background-position: 0 0;
