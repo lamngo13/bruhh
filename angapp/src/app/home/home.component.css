@@ -1,100 +1,125 @@
-
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif !important;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-    box-sizing: content-box; /* Ensures padding and border are included in the element's total width and height */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.title-logo {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80%;
-    padding-top: 5%;
+body, html {
+  font-family: 'Times New Roman', serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.sticky-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #2C3E50; /* Match your website's color scheme */
-  color: #ecf0f1;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px 0;
-  z-index: 1000; /* Ensure it stays on top */
-}
-
+/* Header */
 .sticky-header {
   position: fixed;
-  bottom: 100;
-  left: 0;
+  top: 0; /* Fixes header to the top */
   width: 100%;
-  background-color: black; /* Match your website's color scheme #0d2a47 */
-  color: #ecf0f1;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px 0;
-  z-index: 1001; /* Ensure it stays on top */
-}
-
-.cursor-follow-gif {
-  position: absolute;
-  pointer-events: none; /* Prevents GIF from interfering with mouse events */
-  width: 50px; /* Adjust size as needed */
-  height: 50px;
-  transition: top 0.1s, left 0.1s; /* Optional smooth following effect */
-  z-index: 1111;
-}
-
-/* .menu-button {
-  background-color: transparent;
+  background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.menu-button {
+  background: none;
   border: none;
-  padding: 0;
-  margin: 0;
+  font-size: 1.5rem;
+  color: white;
   cursor: pointer;
-  font-size: 1.5em;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 0px;
-  transition: background-color 0.3s;
+  margin: 0 10px;
 }
 
 .menu-button:hover {
-  background-color: #0056b3;
-} */
-
-.menu-button {
-  background-color: transparent; /* Make the button's background transparent */
-  border: none; /* Remove button border */
-  padding: 0; /* Remove padding from the button */
-  margin-top: .25rem;
-  margin-bottom: .25rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  cursor: pointer;
-  font-size: 3.5rem;
-  font-family: 'Times New Roman', Times, serif;
-  border-radius: 0px;
-  position: relative; /* Required for positioning pseudo-elements */
+  color: #85C1E9; /* Subtle hover effect */
 }
 
-/* .menu-button::after {
-  content: ''; 
+/* Title and Logo */
+.title-logo {
+  margin: 80px auto 20px; /* Spacing below fixed header */
+  text-align: center;
+}
+
+.logo-image {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Video Container */
+.video-container {
+  margin: 20px auto;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 800px; /* Set a max width */
+}
+
+.video-container iframe {
+  width: 100%;
+  height: calc(100% * 0.5625); /* Maintain 16:9 aspect ratio */
+}
+
+/* Socials */
+.socials-container {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.socials-links a {
+  color: #85C1E9;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.socials-links a:hover {
+  text-decoration: underline;
+}
+
+/* Events */
+.upcoming-events-container {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.calendar iframe {
+  max-width: 100%;
+  height: 500px; /* Adjust height for small screens */
+}
+
+/* Cursor Follow GIF */
+.cursor-follow-gif {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: transparent;
-  cursor: pointer; 
-  z-index: 0; 
-} */
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
+  transition: top 0.1s, left 0.1s;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .menu-button {
+    font-size: 1rem;
+  }
+
+  .logo-image {
+    max-width: 90%;
+  }
+
+  .video-container iframe {
+    height: calc(90% * 0.5625); /* Smaller height for mobile */
+  }
+
+  .socials-links a {
+    display: block; /* Stack links vertically on small screens */
+    margin: 5px auto;
+  }
+
+  .calendar iframe {
+    height: 400px; /* Reduce calendar height */
+  }
+}
+
 
 
 .rainbow {
@@ -132,240 +157,3 @@
   }
 }
 
-.socials-container-big {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px;
-  margin-top: 4%;
-  margin-bottom: 4%;
-}
-
-.socials-container-title {
-  font-size: 1em;
-  color: #85C1E9;
-  justify-content: center;
-}
-
-.socials-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin: 20px;
-  gap: 10%;
-  font-size: 2em;
-  color: #85C1E9;
-}
-
-.upcoming-events-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px;
-  margin-top: 4%;
-  margin-bottom: 4%;
-}
-
-.upcoming-events-title {
-  font-size: 1em;
-  color: #85C1E9;
-  justify-content: center;
-}
-
-.calendar{
-  align-items: center;
-}
-
-
-.video-container {
-  max-width: 60vw;  /* Limits width to 60% of the viewport width */
-  max-height: calc(60vw * 0.5625); /* Maintain 16:9 aspect ratio */
-  width: 35em;  /* Approximate initial width for scaling (560px equivalent) */
-  height: calc(35em * 0.5625); /* Maintain 16:9 aspect ratio */
-  margin: 0 auto; /* Center the video on the page */
-}
-
-.video-container iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.services, .about-us, .sticky-footer {
-  margin: 20px;
-}
-
-.overlay {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 10px;
-    padding-bottom: 3em;
-}
-
-h1 {
-    font-size: 6em;
-    margin: 0;
-}
-
-p {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.button-group button {
-    background-color: #1d7ad6;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    font-size: 1.5em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.button-group button:hover {
-    background-color: #0056b3;
-}
-
-.services {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-  gap: 20px; /* Space between the items */
-}
-
-.services h2 {
-  grid-column: span 2; /* Make the heading span across both columns */
-  font-size: 3.5em;
-  margin-bottom: 3px; /* Reduced margin for better alignment */
-  color: #85C1E9;
-  border-bottom: 3px solid #85C1E9;
-}
-
-.services li {
-  color: white;
-  list-style-type: none;
-  font-size: 2em;
-  padding-top: .2em;
-}
-
-.service-item {
-  background-color: #1a3046; /* Background color for the block 2C3E50 */
-  padding: 15px; /* Space inside the block */
-  margin: 1px 0; /* Space between each block */
-  font-size: 1em; /* Adjusted font size */
-  text-align: center;
-}
-
-.services p {
-  color: white;
-  font-size: 1.5em;
-}
-
-.about-us {
-  padding-bottom: 20vh; /* Space for the sticky footer */
-}
-
-.about-us h2 {
-  color: #85C1E9;
-  border-bottom: 2px solid #85C1E9;
-  padding-bottom: 10px;
-  font-size: 3.5em;
-}
-
-.about-us p {
-  color: white;
-  font-size: 1.5em;
-}
-
-
-
-
-
-.sticky-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #2C3E50; /* Match your website's color scheme */
-  color: #ecf0f1;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 10px 0;
-  z-index: 1000; /* Ensure it stays on top */
-}
-
-
-/* THIS IS A BIG TODO BUT MAKE IT WORK ON MOBILE */
-/* media query for MOBILE!!!!!!!!!!!!! */
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .background-image {
-      height: 50vh; /* Reduced height for mobile */
-  }
-
-  .overlay {
-      top: 20%;
-      left: 50%;
-      transform: translate(-50%, -20%);
-      padding: 10px;
-      border-radius: 5px;
-      padding-bottom: 2em;
-  }
-
-  h1 {
-      font-size: 3em; /* Smaller font size for mobile */
-  }
-
-  p {
-      font-size: 1.2em; /* Adjusted font size for mobile */
-  }
-
-  .button-group button {
-      padding: 8px 16px;
-      font-size: 1.2em;
-      margin: 5px;
-  }
-
-  .services {
-      grid-template-columns: 1fr; /* Single column for mobile */
-      grid-template-rows: auto; /* Auto-adjust row height */
-  }
-
-  .services h2 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-  }
-
-  .services li {
-      font-size: 1.2em; /* Smaller font size for mobile */
-      padding-top: .5em;
-  }
-
-  .service-item {
-      padding: 10px;
-      font-size: 0.9em; /* Adjusted font size for mobile */
-  }
-
-  .about-us h2 {
-      font-size: 2.5em; /* Smaller font size for mobile */
-  }
-
-  .about-us p {
-      font-size: 1.2em; /* Adjusted font size for mobile */
-  }
-
-  .sticky-footer {
-      font-size: 1.2em; /* Smaller font size for mobile */
-      padding: 8px 0;
-  }
-}
