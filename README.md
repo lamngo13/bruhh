@@ -32,3 +32,5 @@ deploy
 make it work on mobile
 
 for the game: connect Laz to Ryan
+
+PAYMENT: and query//lock system for inventory and stock
