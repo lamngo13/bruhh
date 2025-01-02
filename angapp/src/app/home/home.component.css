@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+:host {
+  display: block;
+  background-color: rgb(5, 14, 88);
+  color: white; /* Optional: to ensure text is readable */
+  z-index: -10;
+  position: relative;
+}
+
 body, html {
   font-family: 'Times New Roman', serif;
   overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -71,6 +79,8 @@ body, html {
   max-height: 80%;
   max-width: 80%;
   width: 80%;
+  z-index: -2;
+  position: relative;
 }
 
 .video-container {
