@@ -4,6 +4,11 @@ for local development: in index.html -> href="/bedrumor/"
 
 run the following command inside angapp:
 
+I think gh readme is displaying this weird so I try inside quotes:
+
+"ng deploy --base-href='//bedrumor\' --repo=https://github.com/lamngo13/bedrumor.git"
+
+
 ng deploy --base-href='//bedrumor\' --repo=https://github.com/lamngo13/bedrumor.git
 
 ALSO
