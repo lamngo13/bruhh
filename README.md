@@ -3,7 +3,10 @@
 for local development: in index.html -> href="/bedrumor/"
 run the following command inside angapp:
 ng deploy --base-href='//bedrumor\' --repo=https://github.com/lamngo13/bedrumor.git
-
+ALSO
+locally, assets (aka images) will have a ../../ preceding their filepath, but that will not be the case for deployment
+local: ../../assets/img/logopt2.png
+deployment: assets/img/logopt2.png
 ------
 NOTE some assets are not loading - strange!
 
