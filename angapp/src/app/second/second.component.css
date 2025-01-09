@@ -2,15 +2,21 @@
 
   
 html {
-    margin: 0;
-    padding: 0;
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* padding: 0vw; */
     height: 100%;
     overflow: hidden;
-    background-color: #494b57;
+    background-color: white;
+    box-sizing: border-box;
   }
   
   .gallery-container {
-    background-color: #494b57;
+    background-color: white;
     color: #fff;
     text-align: center;
     height: 100vh;
@@ -35,38 +41,33 @@ html {
     position: relative;
 }
   
-  .home-button {
-    background-color: #494b57;
-    color: #85C1E9;
-    text-align: center;
-    padding: 10px 90px;
-    border-radius: 5px;
-    cursor: pointer; 
-    border: none;
-    font-size: 2em;
-  }
-  
-  .home-button:hover {
-    background-color: #000000;
-    color: #85C1E9; 
-    cursor: pointer; /* Ensures the cursor remains a pointer on hover */
-  }
   
   .gallery-content {
     position: relative;
     overflow: hidden;
   }
 
-  .image-container {
+  /* .image-container {
     width: 80vw;
     height: calc(70vh - 60px); /* Increase height of the image container to use more space */
-    overflow: hidden;
+    /* overflow: hidden; */
+/* } */
+
+.image-container {
+  flex: 1; /* Makes the image container take up remaining space */
+  max-width: 80vw; /* Keeps image width flexible but not too wide */
+  max-height: 70vh; /* Keeps image height flexible but not too tall */
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center images within the container */
+  align-items: center; /* Vertically center images */
 }
   
   .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
   }
   
   .arrow {
@@ -89,3 +90,54 @@ html {
     right: 10px;
   }
   
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh; /* Adjusted from absolute height */
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 2rem; /* Scales with viewport */
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    line-height: 1; /* Remove extra space above/below text */
+    display: inline-block;
+  }
+  
+  .menu-button:hover {
+    color: rgb(224, 24, 158); /* Subtle hover effect */
+  }
+  
+  .rainbow_text_animated_menu {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 0;
+    line-height: .0001;
+  }
+  
+  @keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+  
+    50% {
+        background-position: 100% 0;
+    }
+  }
