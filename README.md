@@ -1,4 +1,13 @@
 # deployment notes
+
+for local development: in index.html -> href="/bedrumor/"
+run the following command inside angapp:
+ng deploy --base-href='//bedrumor\' --repo=https://github.com/lamngo13/bedrumor.git
+
+------
+NOTE some assets are not loading - strange!
+
+
 ng deploy --base-href='//son' --repo=https://github.com/lamngo13/son.git
 
 Index.html Base href=”/” for local development but for deployment otherwise
