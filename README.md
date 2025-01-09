@@ -7,6 +7,7 @@ run the following command inside angapp:
 I think gh readme is displaying this weird so I try inside quotes:
 
 "ng deploy --base-href='//bedrumor\' --repo=https://github.com/lamngo13/bedrumor.git"
+tldr is that there are two normal slashes before bedrumor and a single backslash after (no spaces) idk why gh readme isn't rendering lmao
 
 
 ng deploy --base-href='//bedrumor\' --repo=https://github.com/lamngo13/bedrumor.git
