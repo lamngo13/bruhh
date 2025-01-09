@@ -18,6 +18,12 @@ export class SecondComponent {
     'assets/img/image5.jpeg',
     'assets/img/image6.jpeg',
     'assets/img/image7.jpeg',
+    'assets/img/IMG_1586.jpg',
+    'assets/img/IMG_1658.jpg',
+    'assets/img/IMG_1661.jpg',
+    'assets/img/IMG_2044.jpg',
+    'assets/img/IMG_2047.jpg',
+    'assets/img/howse.jpg',
   ]
   currentImage = 0;
   
@@ -25,10 +31,10 @@ export class SecondComponent {
       private elementRef: ElementRef
     ) {}
 
-    ngAfterViewInit() {
-      this.elementRef.nativeElement.ownerDocument
-          .body.style.backgroundColor = '#494b57';
-  }
+  //   ngAfterViewInit() {
+  //     this.elementRef.nativeElement.ownerDocument
+  //         .body.style.backgroundColor = '#494b57';
+  // }
 
   ngOnDestroy() {
     // Reset the background color when this component is destroyed

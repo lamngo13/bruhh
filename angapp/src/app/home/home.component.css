@@ -1,157 +1,230 @@
-body {
-    font-family: Comic, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #02051a;
-    color:#85C1E9;
-    /* todo fix the colors
-    */
-  }
-
-  .topcontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch; /* Ensure the header stretches to match the height of the image */
-    height: 70vh; /* Make the container take up the full height of the viewport */
-    margin: auto; /* Center the container horizontally */
-
-  }
-
-  .imagetop {
-    flex: 35%; /* Takes up 70% of the horizontal space */
-    text-align: right; /* Ensures the image is aligned to the right */
-    display: flex;
-    align-items: center; /* Center image vertically */
-    justify-content: center; /* Center image horizontally */
-    overflow: hidden; /* Hide any overflow */
-    object-fit: cover; /* Cover the container with the image */
-  }
-  
-  .imagetop img {
-    /*width: 400rem; /* Ensure the image fills the container */
-    /*height: 100rem; /* Ensure the image does not exceed the container height */
-
-    width: 100%;
-    height: 100%;
-    
-  }
-  
-  .header {
-    background-color: #494b57;
-    color: white;
-    flex: 65%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 100%;
-    position: relative; /* Make sure child elements are positioned correctly */
-  }
-  
-  .textwimagecontainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
-    max-height: 300px; /* Set as needed */
-    position: relative; /* Ensure correct positioning of children */
-  }
-  
-  .image-section {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    overflow: hidden; /* Hide overflow */
-    position: relative; /* Ensure it doesn't exceed its content size */
-  }
-  
-  .image-section img {
-    display: block; /* Remove any extra space below the image */
-    max-width: 100%; /* Ensure image does not exceed container width */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 100%; /* Ensure image height fits within container */
-    cursor: pointer; /* Pointer cursor */
-  }
-  
-  
-  .header h1 {
-    margin: 0;
-    font-size: 6.5em;
-    color: white;
-  }
-  
-  .header p {
-    margin: 0;
-    font-size: 1.5em;
-    color: white;
-  }
-
-  .button-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-  } 
-  
-
-  .gallerybutton{
-    background-color: #494b57;
-    color: #85C1E9;
-    text-align: center;
-    padding: 10px 90px;
-    border-radius: 5px;
-    cursor: pointer; 
-    border: none;
-    font-size: 1.2em;
-  }
-
-  .gallerybutton:hover {
-    background-color: #000000;
-    color: #85C1E9; 
-    cursor: pointer; /* Ensures the cursor remains a pointer on hover */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  
-  .content {
-    padding: 0px;
+/* :host {
+  display: block;
+  background-color: rgb(5, 14, 88);
+  color: white; 
+  z-index: -10;
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+} */
+
+body, html {
+  font-family: 'Times New Roman', serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+.sticky-header {
+  position: fixed;
+  top: 0; /* Fixes header to the top */
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  z-index: 5;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  line-height: 1; /* Remove extra space above/below text */
+  display: inline-block; /* Ensure button only wraps the text */
+}
+
+.menu-button:hover {
+  color: #85C1E9; /* Subtle hover effect */
+  color: rgb(224, 24, 158)
+}
+
+.title-video-container {
+  display: flex; /* Align items horizontally */
+  justify-content: space-between; /* Add space between logo and video */
+  align-items: center; /* Vertically center items */
+  flex-wrap: wrap; /* Ensure responsiveness */
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  height: 85vh; /* Utilize more vertical space */
+  gap: 20px;
+  position: relative; /* For title positioning */
+  padding-top: 200px; /* Adjust for title height TODO TAKE THIS OUT UNITS */
+}
+
+.title {
+  position: absolute;
+  top: -40px; /* Position above the logo and video */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: black; /* Adjust for visibility */
+}
+
+.title-logo {
+  flex: 1; /* Smaller portion for the logo */
+  text-align: center;
+  height: 80%; /* Allow the logo to grow vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 80%;
+  max-width: 80%;
+  width: 80%;
+  z-index: -2;
+  position: relative;
+}
+
+.video-container {
+  flex: 2; /* Larger portion for the video */
+  max-width: 800px; /* Allow more space for the video */
+  height: 80%; /* Increase vertical size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%; /* Allow the video to grow */
+}
+
+/* Socials */
+.socials-container {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.socials-links a {
+  color: #85C1E9;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.socials-links a:hover {
+  text-decoration: underline;
+}
+
+/* Events */
+.upcoming-events-container {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.calendar iframe {
+  max-width: 100%;
+  height: 500px; /* Adjust height for small screens */
+}
+
+/* Cursor Follow GIF */
+.cursor-follow-gif {
+  position: absolute;
+  pointer-events: none;
+  width: 50px;
+  height: 50px;
+  transition: top 0.1s, left 0.1s;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .menu-button {
+    font-size: 1rem;
   }
-  
-  section {
-    margin-bottom: 20px;
+
+  .logo-image {
+    max-width: 90%;
   }
-  
-  h2 {
-    color: #85C1E9;
-    border-bottom: 2px solid #85C1E9;
-    padding-bottom: 10px;
+
+  .video-container iframe {
+    height: calc(90% * 0.5625); /* Smaller height for mobile */
   }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
+
+  .title-video-container {
+    flex-direction: column; /* Stack items vertically */
   }
-  
-  ul li {
-    background-color: #e0e0e0;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
+
+  .title-logo, .video-container {
+    flex: unset;
+    width: 100%; /* Take full width */
+    max-width: none; /* Remove max width */
+    margin: 10px 0; /* Add spacing between items */
   }
-  
-  a {
-    color: #004080;
-    text-decoration: none;
+
+  .socials-links a {
+    display: block; /* Stack links vertically on small screens */
+    margin: 5px auto;
   }
-  
-  .footer {
-    background-color: #85C1E9;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+  .calendar iframe {
+    height: 400px; /* Reduce calendar height */
   }
-  
+}
+
+
+
+.rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+.rainbow_text_animated_menu {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 0;
+  line-height: .0001;
+}
+
+.logo-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 200%;
+  padding-top: 5%;
+  z-index: -2;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
+

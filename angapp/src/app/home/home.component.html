@@ -1,60 +1,65 @@
-<div class="topcontainer">
-    <div class="header">
-      <div class="tempcontainer">
-        <h1>Nelson Installations</h1>
-        <p><br></p>
-        <p>Serving the internal construction BE MORE DETAILED HERE SLIGHTLY needs of the Tennessee area for 6 years! 
-          text and spacing text so it looks nice i am writing text ayyo bruh machine learning is cool
-        </p>
-      </div>
-      <div class="textwimagecontainer">
-        <div class="text-section">
-          <p *ngIf="language === 'en'">Hacer clic en el pero para Español</p>
-          <p *ngIf="language === 'sp'">Click on the dog for English</p>
-        </div>
-        <div class="image-section">
-          <img class="img" src="assets/img/doggie.png" (click)="toggleLangugae()" alt="image">
-        </div>
-      </div>
-      <div class="button-container">
-        <button class="gallerybutton" (click)="second()">GALLERY</button>
-        <button class="gallerybutton" (click)="second()">GALLERY</button>
-        <button class="gallerybutton" (click)="second()">GALLERY</button>
-        <button class="gallerybutton" (click)="second()">GALLERY</button>
-      </div>
-    </div>
-    <div class="imagetop">
-        <img class="img" src="assets/img/IMG_0720.PNG" alt="image">
-    </div>
+<div (mousemove)="onMouseMove($event)">
+  <img
+    [src]="imageSrc"
+    [ngStyle]="{ top: gifPosition.y + 'px', left: gifPosition.x + 'px' }"
+    class="cursor-follow-gif"
+  />
+  
+  <div class="page-container">
+    <!-- Header -->
+    <header class="sticky-header">
+      <button class="menu-button rainbow_text_animated_menu" (click)="shop()">MERCH</button>
+      <button class="menu-button rainbow_text_animated_menu" (click)="second()">GALLERY</button>
+      <button class="menu-button rainbow_text_animated_menu" (click)="game()">GAME</button>
+    </header>
 
-</div>
+    <div class="title-video-container">
+      <div class="title">BEDRUMOR</div>
+      <div class="title-logo">
+        <img src="assets/img/logopt2.png" class="logo-image" alt="Logo" />
+      </div>
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/406W65P-hkQ" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
   
-  <div class="content">
-    <section class="about-us">
-      <h2>About Us</h2>
-      <p>
-        JD Installations is the (east coast's) top construction company.
-      </p>
-      <button class="gallerybutton" (click)="second()">GALLERY</button>
-      
+    <!-- Socials -->
+    <div class="socials-container">
+      <h1 class="rainbow_text_animated">Check out our socials</h1>
+      <div class="socials-links">
+        <a href="https://www.instagram.com/bedrumor/" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/bedrumor/" target="_blank">Spotify</a>
+        <a href="https://www.instagram.com/bedrumor/" target="_blank">SoundCloud</a>
+      </div>
+    </div>
   
-    </section>
-  
-    <section class="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Residential Construction</li>
-        <li>Commercial Construction</li>
-        <li>Renovations and Remodeling</li>
-        <li>Custom Installations</li>
-        <li>Project Management</li>
-      </ul>
-    </section>
-  
-    <section class="contact-us">
-      <h2>Contact Us</h2>
-      <p>For inquiries and quotes, reach out to us:</p>
-      <p>Email: sampleEmail&#64;gmail.com </p>
-      <p>Phone: +1 (123) 456-7890</p>
-    </section>
+    <!-- Events -->
+    <div class="upcoming-events-container">
+      <h1 class="rainbow_text_animated">Come see us play!</h1>
+      <div class="calendar">
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=example_calendar_url"
+          style="border: 0"
+          width="600"
+          height="600"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
+    </div>
   </div>
+
+  <div class="todo">
+    <h1>about us section??? Idk like bios or something?</h1>
+  </div>
+
+  <div class="todo">
+    <h1>maybe a lil mini gallery or something?</h1>
+  </div>
+</div>

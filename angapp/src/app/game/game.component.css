@@ -1,0 +1,59 @@
+/* Game Container */
+.game-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border: 2px solid #333;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+
+.scratch-game-container {
+    position: absolute;
+    width: 90%;
+    max-width: 90%;
+    height: 70%;
+    background-color: #f7f7f7;
+    border: 2px solid #333;
+    overflow: hidden;
+    margin: 20px auto;
+  }
+  
+  /* Dinosaur */
+  .dino {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    transition: bottom 0.1s ease;
+  }
+  
+  .jump {
+    animation: jump 0.5s ease;
+  }
+  
+  @keyframes jump {
+    0% { bottom: 0; }
+    50% { bottom: 80px; }
+    100% { bottom: 0; }
+  }
+  
+  /* Obstacle */
+  .obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 40px;
+    background-color: red;
+    animation: obstacleMove 2s linear infinite;
+  }
+  
+  @keyframes obstacleMove {
+    0% { right: 0; }
+    100% { right: 100%; }
+  }
+  
