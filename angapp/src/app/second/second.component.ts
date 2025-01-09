@@ -47,6 +47,21 @@ export class SecondComponent {
         .body.style.backgroundColor = ''; // Reset to default or specify a default color
   }
 
+  //navigation
+  home() {
+    console.log('home');
+    this.router.navigate(['/home']);
+  }
+
+  shop() {
+    console.log('shop');
+    this.router.navigate(['/shop']);
+  }
+
+  game() {
+    console.log('game');
+    this.router.navigate(['/game']);
+  }
   
     goHome() {
       console.log('home');

@@ -1,15 +1,16 @@
 <div class="gallery-container">
-    <div class="gallery-header">
-      <button class="home-button" (click)="goHome()">Home</button>
-    </div>
-    <div class="gallery-content">
-      <button class="arrow left-arrow" (click)="prevImage()">&#10094;</button>
-      <div class="image-container">
-        <img [src]="images[currentImage]" alt="Gallery Image">
-      </div>
-      <button class="arrow right-arrow" (click)="nextImage()">&#10095;</button>
-    </div>
-  </div>
-  
+  <!-- Header -->
+  <header class="sticky-header">
+    <button class="menu-button rainbow_text_animated_menu" (click)="shop()">MERCH</button>
+    <button class="menu-button rainbow_text_animated_menu" (click)="home()">HOME</button>
+    <button class="menu-button rainbow_text_animated_menu" (click)="game()">GAME</button>
+  </header>
 
-  <!-- pink f238ff -->
+  <div class="gallery-content">
+    <button class="arrow left-arrow" (click)="prevImage()">&#10094;</button>
+    <div class="image-container">
+      <img [src]="images[currentImage]" alt="Gallery Image">
+    </div>
+    <button class="arrow right-arrow" (click)="nextImage()">&#10095;</button>
+  </div>
+</div>
