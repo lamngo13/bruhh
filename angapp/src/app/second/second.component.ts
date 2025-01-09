@@ -36,6 +36,11 @@ export class SecondComponent {
   //         .body.style.backgroundColor = '#494b57';
   // }
 
+      ngAfterViewInit() {
+      this.elementRef.nativeElement.ownerDocument
+          .body.style.backgroundColor = '';
+  }
+
   ngOnDestroy() {
     // Reset the background color when this component is destroyed
     this.elementRef.nativeElement.ownerDocument

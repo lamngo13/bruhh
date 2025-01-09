@@ -2,15 +2,21 @@
 
   
 html {
-    margin: 0;
-    padding: 0;
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    /* padding: 0vw; */
     height: 100%;
     overflow: hidden;
-    background-color: #494b57;
+    background-color: white;
+    box-sizing: border-box;
   }
   
   .gallery-container {
-    background-color: #494b57;
+    background-color: white;
     color: #fff;
     text-align: center;
     height: 100vh;
