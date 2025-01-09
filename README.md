@@ -8,6 +8,12 @@ locally, assets (aka images) will have a ../../ preceding their filepath, but th
 local: ../../assets/img/logopt2.png
 deployment: assets/img/logopt2.png
 ------
+main is the branch for deployment
+
+dev is the optimal branch for tracking - but not w the tweaks for deployment
+
+-----
+
 NOTE some assets are not loading - strange!
 
 
